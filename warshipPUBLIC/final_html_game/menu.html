@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battleship Game</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    #label1{
+        font-size: 130px;
+        text-align: center;
+        padding-top: 130px;
+        padding-bottom: 50px;
+        font-weight: normal;
+        color: black;
+    }
+    button{
+        font-size: 50px;
+        border-radius: 10px;
+        font-weight: bold;
+        padding: 5px;
+        margin: 17px;
+        cursor: pointer;
+        color: black;
+        box-shadow: 0 0 22px rgba(0, 0, 0, 0.7);
+        text-transform: uppercase;
+    }
+    #container{
+        text-align: center;
+    }
+    #container1{
+        text-align: center;
+    }
+    #container2{
+        text-align: center;
+    }
+    #new_game{
+        width: 440px;
+        background-image: linear-gradient(to left, #204b88,#133768,#204b88);
+        background-size: 200%;
+        transition: 0.7s;
+        border: none;
+    }
+
+    #new_game:hover{
+        background-position: right;
+    }
+
+    #options{
+        width: 440px;
+        background-image: linear-gradient(to left, #204b88,#133768,#204b88);
+        background-size: 200%;
+        transition: 0.7s;
+        border: none;
+    }
+
+    #options:hover{
+        background-position: right;
+    }
+
+    #exit{
+        width: 440px;
+        background-image: linear-gradient(to left, #204b88,#133768,#204b88);
+        background-size: 200%;
+        transition: 0.7s;
+        border:none;
+    }
+
+    #exit:hover{
+        background-position: right;
+    }
+
+    </style>
+
+<body>
+    
+<div class="background-img"> 
+    <h1 id="label1">BATTLESHIP</h1><br>
+
+    <div id="container"><button type="button" onclick="location.href='game.html'" id="new_game">New Game</button></div>
+    <!--
+    <div id="container1"><button type="button" onclick="location.href='options.html'" id="options">Options</button></div>
+    <div id="container2"><button type="button" onclick="location.href='#'" id="exit">Exit</button></div>
+    -->
+</div>
+
+</body>
+</html>

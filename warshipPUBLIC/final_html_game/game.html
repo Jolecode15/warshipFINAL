@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Battleship Game</title>
+        <script src="game.js" charset="utf-8"></script>
+        <link rel="stylesheet" href="game.css">
+    </head>
+    <body class="background_img">
+        <div class="container">
+            <div class="table table_me"></div>
+            <div class="middle_container">
+                <div class="ships_container">
+                    <div class="ship destroyer-container" draggable="true"><div class="destroyer-0"></div><div class="destroyer-1"></div></div>
+                    <div class="ship submarine-container" draggable="true"><div class="submarine-0"></div><div class="submarine-1"></div><div class="submarine-2"></div></div>
+                    <div class="ship cruiser-container" draggable="true"><div class="cruiser-0"></div><div class="cruiser-1"></div><div class="cruiser-2"></div></div>
+                    <div class="ship battleship-container" draggable="true"><div class="battleship-0"></div><div class="battleship-1"></div><div class="battleship-2"></div><div class="battleship-3"></div></div>
+                    <div class="ship carrier-container" draggable="true"><div class="carrier-0"></div><div class="carrier-1"></div><div class="carrier-2"></div><div class="carrier-3"></div><div class="carrier-4"></div></div>
+                </div>
+                <div class="message_container">
+                    <div class="arrow"></div>
+                    <p class="message1 message"></p>
+                    <p class="message2 message"></p>
+                </div>
+            </div>
+            <div class="table table_enemy"></div>
+        </div>
+        <div class="footer">
+            <div class="command_buttons">
+                <div><button id="play">PLAY</button></div>
+                <div><button id="shuffle">SHUFFLE</button></div>
+                <div><button id="rotate">ROTATE</button></div>
+            </div>
+        </div>
+    </body>
+</html>

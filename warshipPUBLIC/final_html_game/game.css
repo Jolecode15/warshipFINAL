@@ -1,0 +1,212 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+.background_img {
+    background-color: #00aaff;
+    height: 98.2vh;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    width:100%;
+}
+.table{
+    display:grid;
+    margin:2vmin;
+    cursor: pointer;
+    grid-template-rows: repeat(10, 4.6vmin);
+    grid-template-columns: repeat(10, 4.6vmin);
+}
+.table div{
+    border: 1px solid hsla(0, 0%, 100%, .5);
+}
+.taken_div_shown{
+    background-color: #b5bec5;
+}
+.taken_div_shown.horizontal-start,
+.taken_div_shown.horizontal-start::after{
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+.taken_div_shown.horizontal-end,
+.taken_div_shown.horizontal-end::after{
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.taken_div_shown.vertical-start,
+.taken_div_shown.vertical-start::after{
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+.taken_div_shown.vertical-end,
+.taken_div_shown.vertical-end::after{
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.hit,
+.miss{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hit::after,
+.miss:after{
+    content: "";
+    border-radius: 100%;
+    position: absolute;
+    width:2vmin;
+    height:2vmin;
+}
+.hit::after{
+    background-color: #ff0000;
+}
+.miss::after{
+    background-color: #ffffff;
+}
+
+.middle_container{
+    display: flex;
+    width: 50vmin;
+    height: 46vmin;
+    margin: 2vmin;
+    cursor: pointer;
+}
+.ships_container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.ship{
+    display:flex;
+    flex-wrap: wrap;
+    margin:1vmin;
+    width: calc(4.6vmin * var(--width,1));
+    height: calc(4.6vmin * var(--height,1));
+    background-color: #b5bec5;
+    border-radius: 2.3vmin;
+}
+.ship > div {
+    width: 4.6vmin;
+    height: 4.6vmin;
+  }
+.destroyer-container{
+    --width:2;
+}
+.destroyer-container-vertical{
+    --width:1;
+    --height:2;
+}
+.submarine-container, .cruiser-container{
+    --width:3;
+}
+.submarine-container-vertical, .cruiser-container-vertical{
+    --width:1;
+    --height:3;
+}
+.battleship-container{
+    --width:4;
+}
+.battleship-container-vertical{
+    --width:1;
+    --height:4;
+}
+.carrier-container{
+    --width:5;
+}
+.carrier-container-vertical{
+    --width:1;
+    --height:5;
+}
+.message_container{
+    display: none;
+    width: 100%;
+    height: 90%;
+    margin: auto 5%;
+    padding: 0;
+    border: 3px solid black;
+}
+.arrow{
+    display:relative;
+    background-image: url('img/arrow.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:50%;
+    height:50%;
+    margin: auto auto;
+}
+@keyframes rotate_arrow_to_computer {
+    from {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(180deg);
+    }
+}
+@keyframes rotate_arrow_to_me {
+    from {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(180deg);
+    }
+}
+.message{
+    display: block;
+    position: relative;
+    width:90%;
+    height:auto;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+.message1{
+    font-size: 5vmin;
+}
+.message2{
+    font-size: 4vmin;
+}
+/*
+.footer{
+    width: 100%;
+    height: 100px;
+    padding-left: 0px;
+    margin-left: 0px;
+    margin-top: 52.6%;
+    background-color: #111;
+    overflow: hidden;
+    display: inline-flex;
+}*/
+.footer {
+    display:block;
+    width: 80%;
+    height: 200px;
+    margin: auto;
+    padding: 20px 40px;
+    overflow: hidden;
+}
+.command_buttons{
+    display:flex;
+    justify-content: center;
+    width:100%;
+    height: auto;
+}
+div.command_buttons div{
+    display:inline-flex;
+    width:80px;
+    height:80px;
+    padding:0 10px;
+}
+div.command_buttons div button{
+    width:100%;
+    height:100%;
+    margin:0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #1711c569;
+    color: #ffffff;
+    font-size: 2vmin;
+    border-radius: 50%;
+}
